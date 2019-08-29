@@ -41,7 +41,7 @@ def test():
     create("black sock")
     create("yellow shoe")
     create("red shoe")
-    create("red beanie")
+    create("blue beanie")
     create("green pants")
     create("orange shirt")
 
