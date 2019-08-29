@@ -32,31 +32,19 @@ def list_all_items():
 
 def mark_completed(index):
     # loop over every item in the checklist to find item to mark as complete
-    # for list_items in checklist:
         update(index, "√ " + checklist[index])
-    # print("{} {}".format("√", list_item))
-
 
 #Test
 def test():
-    create("purple sox")
-    create("red cloak")
-    create("green pants")
+    # List of Colored Clothing Items
+    create("purple sock")
+    create("black sock")
     create("yellow shoe")
     create("red shoe")
+    create("red beanie")
+    create("green pants")
     create("orange shirt")
-    create("black sock")
 
-    # print(read(0))
-    # print(read(1))
-    #
-    # update(0, "purple socks")
-    #
-    # destroy(1)
-    #
-    # print(read(0))
-
-    # list_all_items()
 
     mark_completed(2)
 
