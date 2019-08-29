@@ -1,25 +1,25 @@
-# Create our Checklist
+# Creates a new empty list
 checklist = list()
 
 # Define Functions: CRUD
 # CREATE
 def create(item):
-    # create item code here
+    # create item: adds items to the checklist
     checklist.append(item)
 
 # READ
 def read(index):
-    # Read code here
+    # Read code here: retrieves a value from the checklist using its index
     return checklist[index]
 
 # UPDATE
 def update(index, item):
-    # Update code here
+    # Update code here: Use the index of the item that needs to be updated followed by its change
     checklist[index] = item
 
 # DESTROY
 def destroy(index):
-    # Destroy code here
+    # Destroy code: used to remove the last item in the list
     checklist.pop(index)
 
 #List all items
@@ -50,4 +50,5 @@ def test():
 
     list_all_items()
 
+# Run all of the tests
 test()
