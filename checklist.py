@@ -53,12 +53,9 @@ def select(function_code):
 
     # Read item
     elif function_code == "R":
-        invalid = True
-        while invalid:
-            item_index = user_input("Index Number? ")
-            invalid = valid_index(input)
+        item_index = int(user_input("Index Number?: "))
         print("Item: " + read(int(item_index)))
-        list_all_items()
+        read(item_index)
 
     # Update item
     elif function_code == "U":
@@ -112,16 +109,16 @@ def test():
     # List of Colored Clothing Items
     create("Purple sox")
 
-    # print(read(0))
-    # print(read(1))
-
     update(0, "Purple socks")
-
-    # destroy(1)
-    # print(read(0))
 
     create("Red cloak")
     create("Brown pants")
+    create("Blue shirt")
+    create("Gray hat")
+    create("Black scarf")
+
+    # item "Gray hat" is destroyed
+    destroy(4)
     list_all_items()
 
     mark_completed(2)
